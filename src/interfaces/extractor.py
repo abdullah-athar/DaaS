@@ -8,6 +8,7 @@ class DataExtractorBase(ABC):
 
     @abstractmethod
     def get_data(self) -> pd.DataFrame:
+        """Logic to ingest data into the data pipeline"""
         raise NotImplementedError
 
     @abstractmethod
